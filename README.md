@@ -1,10 +1,17 @@
-# Cursor AI IDE Advanced Course
+# 🚀 Cursor AI IDE: Building Production Applications
 
-A comprehensive course on mastering Cursor AI IDE for building production-ready applications. This repository contains course materials, presentations, best practices, and example projects for developers who want to leverage AI-assisted development effectively.
+[![O'Reilly Live Training](https://img.shields.io/badge/O'Reilly-Live%20Training-red?style=for-the-badge&logo=oreilly)](https://www.oreilly.com/)
+[![Cursor](https://img.shields.io/badge/Cursor-AI%20IDE-black?style=for-the-badge)](https://cursor.com/)
+[![Next.js](https://img.shields.io/badge/Next.js-15+-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 
-## 📚 Course Overview
+> **Master AI-assisted development** — Learn to build full-stack production applications using Cursor's advanced features, project rules, agents, and MCP integration.
 
-This course is designed for experienced developers who want to move beyond basic AI code completion and learn how to build complete, production-ready applications using Cursor. The curriculum covers everything from advanced context management to full-stack development, deployment, and production best practices.
+---
+
+## 📋 Course Overview
+
+This hands-on course takes developers beyond basic AI code completion to building complete, production-ready applications. You'll learn advanced Cursor workflows, context management strategies, and deployment best practices through practical, real-world projects.
 
 ### What You'll Learn
 
@@ -15,98 +22,193 @@ This course is designed for experienced developers who want to move beyond basic
 - **Production Deployment**: Testing strategies, CI/CD, monitoring, and optimization
 - **Best Practices**: Real-world workflows used by staff engineers and consultants
 
-## 🎯 Course Structure
+### What You'll Build
+
+| Project | Description | Tech Stack |
+|---------|-------------|------------|
+| **Task Manager** | Full CRUD app with auth & real-time features | Next.js, Clerk, Supabase, Tailwind |
+| **AI Quiz App** | Intelligent quiz generation from study materials | Next.js, Claude API, Supabase, Clerk |
+| **ChronoFocus** | Time-blocking task scheduler | Next.js, Prisma, PostgreSQL |
+
+---
+
+## 🎯 Course Sections
 
 The course is divided into 5 comprehensive sections:
 
 ### Section 1: Cursor & Context Management (60 minutes)
 - Cursor overview and context management
 - Codebase indexing and `@` symbol mastery
+- Context windows and token management
+- Understanding and creating project rules (`.cursor/rules/*.mdc`)
 - Project rules and agents
+- Agent types and background agents
 - Model Context Protocol (MCP) introduction
 - Live configuration demos
 
 ### Section 2: Building Your First Full App (60 minutes)
 - AI-driven project initialization
 - Creating architecture-specific project rules
+- Building data layers with storage modules
 - Core feature development (data layer, UI components)
+- Creating UI components with AI assistance
+- Adding real-time features
 - Real-time features and polish
 - Performance optimization strategies
 
 ### Section 3: Advanced App Development & Architecture (60 minutes)
 - React project architecture and scaffolding
+- React project scaffolding with Cursor
 - Advanced project rules for React
+- Advanced project rules for React patterns
 - State management patterns (Zustand)
 - Building an AI-powered quiz app
+- Building an AI-powered Quiz App
 - Advanced UI/UX features and testing
+- MCP for UI testing and prototyping
 
 ### Section 4: Real-World Full-Stack Application (45 minutes)
 - Full-stack architecture design
+- Full-stack architecture planning
 - Backend development with Next.js API routes
+- Backend development with Server Actions
 - Frontend implementation with Server Components
 - Real-time collaboration features
 - Deployment to Vercel
 
 ### Section 5: Deployment, Testing & Production Best Practices (45 minutes)
+- Deployment to Vercel
 - Comprehensive testing strategies (unit, integration, E2E)
+- AI-assisted CI/CD pipelines
+- Testing strategies with AI
 - Multi-environment deployment setup
 - CI/CD pipeline configuration
 - Production monitoring and observability
+- Production monitoring and best practices
 - Security best practices
+
+---
 
 ## 📁 Repository Structure
 
 ```
 cursor-course/
-├── assets-resources/          # Course materials and resources
-│   ├── course_outline.md      # Detailed course outline
+├── 📂 assets-resources/          # Course materials & guides
+│   ├── course_outline.md         # Detailed section breakdown
 │   ├── cursor-course-complete-proposal.md  # Full course proposal
 │   ├── cursor_example_best_practices.md     # Best practices guide
 │   ├── cursor_for_staff_engineers.md       # Staff engineer workflows
-│   ├── demo-project-examples.md            # Example projects
+│   ├── demo-project-examples.md  # Project templates & prompts
 │   ├── demo-scripts.md                     # Demo scripts
 │   ├── presentation_guide.md                 # Presentation guidelines
+│   ├── prompting_tips.md
 │   └── raw-course-materials/               # Source materials
 │
-├── presentation/              # Presentation files
-│   ├── presentation.html      # HTML presentation
-│   ├── cursor-for-modern-dev.pdf  # PDF presentation
-│   └── scripts.md             # Presentation scripts
+├── 📂 presentation/              # Slide deck & scripts
+│   ├── cursor-for-modern-dev.pdf
+│   ├── presentation.html         # Remark.js slides
+│   └── scripts.md
 │
-├── PLAN_task_manager.md       # Task manager app requirements
-├── SETUP_task_manager.md      # Task manager setup guide
-├── AGENTS.md                  # Cursor agent configuration
-├── CLAUDE.md                  # Claude AI configuration
-└── README.md                  # This file
+├── 📂 chronofocus/               # Demo: Time-blocking app
+│   └── prisma/
+│       └── schema.prisma
+│
+├── 📄 PLAN_quiz_app.md           # AI Quiz App PRD
+├── 📄 PLAN_task_manager.md       # Task Manager PRD
+├── 📄 SETUP_task_manager.md      # Step-by-step setup guide
+├── 📄 AGENTS.md                  # Cursor rules & conventions
+├── 📄 CLAUDE.md                  # AI assistant context
+└── 📄 README.md                  # This file
 ```
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
+## 🛠️ Tech Stack
 
-- Basic knowledge of JavaScript/TypeScript
-- Familiarity with React and Next.js
-- Experience with modern development tools (Git, npm/yarn)
-- Cursor IDE installed ([download here](https://cursor.sh))
+### Core Technologies
+- **Framework:** Next.js 15+ (App Router)
+- **Language:** TypeScript / JavaScript
+- **Styling:** Tailwind CSS + shadcn/ui + Radix UI
+- **State:** Zustand / React Context
 
-### Quick Start
+### Backend & Data
+- **Database:** Supabase (PostgreSQL) / Prisma ORM
+- **Authentication:** Clerk
+- **AI Integration:** Anthropic Claude API
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/cursor-course.git
-   cd cursor-course
-   ```
+### Development & Deployment
+- **IDE:** Cursor AI
+- **Deployment:** Vercel
+- **Version Control:** Git + GitHub
 
-2. **Review the course materials**
-   - Start with `assets-resources/course_outline.md` for the full curriculum
-   - Read `assets-resources/cursor_example_best_practices.md` for best practices
-   - Check `PLAN_task_manager.md` for a complete example project
+---
 
-3. **Follow along with examples**
-   - The task manager app (`PLAN_task_manager.md` and `SETUP_task_manager.md`) serves as a complete reference implementation
-   - Use it to understand the full development workflow
+## 🚦 Prerequisites
 
-## 📖 Key Resources
+Before attending the course, ensure you have:
+
+- [ ] **Cursor IDE** installed ([cursor.com](https://cursor.com))
+- [ ] **Node.js 18+** installed
+- [ ] **Git** configured
+- [ ] Basic familiarity with React and Next.js
+- [ ] A **Clerk** account (free tier works)
+- [ ] A **Supabase** account (free tier works)
+- [ ] A **Vercel** account for deployment
+
+### Optional (for advanced sections)
+- [ ] **Anthropic API key** for AI quiz generation
+- [ ] **GitHub account** for CI/CD demos
+
+---
+
+## 🏃‍♂️ Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/EnkrateiaLucca/cursor-course.git
+cd cursor-course
+```
+
+### 2. Open in Cursor
+```bash
+cursor .
+```
+
+### 3. Review Project Rules
+The repository includes pre-configured Cursor rules in `AGENTS.md`:
+- Code style (Standard.js, 2-space indent, no semicolons)
+- React patterns (functional components, hooks)
+- State management (Zustand)
+- UI conventions (Tailwind + shadcn/ui)
+
+### 4. Follow Along with Demo Projects
+Start with `PLAN_task_manager.md` for a complete walkthrough of building a production app.
+
+---
+
+## 📚 Course Resources
+
+### Product Requirement Documents
+| Document | Description |
+|----------|-------------|
+| [`PLAN_task_manager.md`](./PLAN_task_manager.md) | Complete PRD for Task Manager app |
+| [`PLAN_quiz_app.md`](./PLAN_quiz_app.md) | Complete PRD for AI Quiz App |
+| [`SETUP_task_manager.md`](./SETUP_task_manager.md) | Step-by-step implementation guide |
+
+### Cursor Configuration
+| File | Purpose |
+|------|---------|
+| [`AGENTS.md`](./AGENTS.md) | Project rules for consistent AI behavior |
+| [`CLAUDE.md`](./CLAUDE.md) | Context for AI assistants |
+
+### Reference Materials
+| Resource | Content |
+|----------|---------|
+| [`assets-resources/demo-project-examples.md`](./assets-resources/demo-project-examples.md) | Example prompts & patterns |
+| [`assets-resources/prompting_tips.md`](./assets-resources/prompting_tips.md) | Prompting best practices |
+| [`assets-resources/cursor_example_best_practices.md`](./assets-resources/cursor_example_best_practices.md) | Practical tips for using Cursor effectively |
+| [`assets-resources/cursor_for_staff_engineers.md`](./assets-resources/cursor_for_staff_engineers.md) | Advanced workflows for senior engineers |
+| [`assets-resources/cursor_best_practices.md`](./assets-resources/raw-course-materials/cursor_best_practices.md) | Cursor workflow tips |
 
 ### Course Materials
 
@@ -132,6 +234,8 @@ cursor-course/
 - **PDF Presentation**: `presentation/cursor-for-modern-dev.pdf` - Printable version
 - **Scripts**: `presentation/scripts.md` - Presentation talking points
 
+---
+
 ## 🎓 Learning Path
 
 ### For Beginners
@@ -148,6 +252,8 @@ cursor-course/
 1. Read `assets-resources/cursor_for_staff_engineers.md` first
 2. Focus on workflow automation and delegation patterns
 3. Study the three-step framework: Explore → Plan → Build
+
+---
 
 ## 💡 Key Concepts
 
@@ -170,8 +276,24 @@ Project rules (`.cursor/rules/*.mdc`) guide AI behavior:
 - Use `@codebase` to reference entire project
 - Use `@docs` to include documentation
 - Use `@web` to search and include web results
+- Use `@filename` to reference specific files
 - Keep context focused and relevant
 - Start new chats when context gets too long
+
+### Project Rules Types
+| Type | When Active | Use Case |
+|------|-------------|----------|
+| **Always** | Every prompt | Core standards |
+| **Auto Attached** | Matching file patterns | File-specific rules |
+| **Agent Requested** | AI-initiated | Domain knowledge |
+| **Manual** | On-demand | Specialized tasks |
+
+### Agent Modes
+- **Planning Mode** - Architecture and design
+- **Review Mode** - Code quality checks
+- **Tools Mode** - External integrations
+
+---
 
 ## 🛠️ Example Workflows
 
@@ -195,6 +317,8 @@ Project rules (`.cursor/rules/*.mdc`) guide AI behavior:
 4. Fix issues one by one
 5. Update planning doc as you go
 
+---
+
 ## 📝 Best Practices
 
 ### Code Organization
@@ -217,6 +341,50 @@ Project rules (`.cursor/rules/*.mdc`) guide AI behavior:
 - Commit working code frequently
 - Document decisions and patterns
 
+---
+
+## 🎨 Project Rules Example
+
+The course teaches you to create effective project rules. Here's a sample:
+
+```markdown
+# .cursor/rules/api-standards.mdc
+---
+description: REST API design standards
+glob: ["**/api/**/*.ts", "**/routes/**/*.ts"]
+---
+
+Always use:
+- RESTful naming conventions
+- Proper HTTP status codes (200, 201, 400, 401, 404, 500)
+- Input validation with Zod
+- Error handling middleware
+- Consistent response format: { data, error, message }
+```
+
+See the task manager project for examples of:
+- Architecture rules
+- Styling rules
+- State management patterns
+- API design standards
+
+---
+
+## 🚀 Deployment Workflow
+
+```mermaid
+graph LR
+    A[Local Dev] --> B[Git Push]
+    B --> C[GitHub Actions]
+    C --> D{Tests Pass?}
+    D -->|Yes| E[Deploy to Vercel]
+    D -->|No| F[Fix Issues]
+    F --> B
+    E --> G[Production]
+```
+
+---
+
 ## 🔧 Configuration
 
 ### Cursor Settings
@@ -225,26 +393,41 @@ The repository includes configuration examples:
 - `AGENTS.md`: Agent configuration patterns
 - `CLAUDE.md`: Claude AI setup and best practices
 
-### Project Rules Example
+---
 
-See the task manager project for examples of:
-- Architecture rules
-- Styling rules
-- State management patterns
-- API design standards
+## 📖 Additional Resources
+
+- [Cursor Documentation](https://docs.cursor.com/)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Clerk Documentation](https://clerk.com/docs)
+- [Supabase Documentation](https://supabase.com/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [shadcn/ui](https://ui.shadcn.com/)
+
+---
 
 ## 🤝 Contributing
 
-This is a course repository. If you'd like to contribute:
+This is a course repository maintained for O'Reilly live trainings. If you find issues or have suggestions:
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request with a clear description
+1. Open an issue with a clear description
+2. For fixes, submit a PR with your changes
+3. Follow the existing code style and conventions
+
+---
 
 ## 📄 License
 
-This course material is provided for educational purposes. Please respect the original sources and attributions in the materials.
+This course material is proprietary and intended for O'Reilly live training participants. Please do not redistribute without permission.
+
+---
+
+## 👨‍🏫 Instructor
+
+**Lucas Soares**  
+GitHub: [@EnkrateiaLucca](https://github.com/EnkrateiaLucca)
+
+---
 
 ## 🙏 Acknowledgments
 
@@ -252,12 +435,16 @@ This course material is provided for educational purposes. Please respect the or
 - The developer community for sharing best practices
 - Contributors who have provided feedback and improvements
 
+---
+
 ## 📞 Support
 
 For questions or issues:
 - Review the course materials in `assets-resources/`
 - Check the example projects for reference implementations
 - Consult Cursor documentation: https://docs.cursor.com/
+
+---
 
 ## 🎯 Next Steps
 
@@ -268,5 +455,8 @@ For questions or issues:
 
 ---
 
-**Happy coding with Cursor! 🚀**
+<div align="center">
 
+**Ready to build production apps with AI? Let's go! 🚀**
+
+</div>
