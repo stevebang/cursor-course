@@ -42,10 +42,12 @@
 
 class: center, middle
 
-# Cursor for Modern Development
-## Building Production Apps with AI-Powered Coding
+# Rapidly Build and Deploy a Full-Stack App with Cursor
+## Advanced AI-assisted SaaS application development
 
-**O'Reilly Live Training**
+**Lucas Soares**
+
+12/02/2025
 
 ---
 
@@ -106,7 +108,7 @@ class: center, middle
 # Core Features
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px;">
-  <div style="background: #f6faff; border-radius: 15px; padding: 25px; box-shadow: 0 2px 12px #0001;">
+  <div style="background: #f6faff; border-radius: 15px; padding: 10px; box-shadow: 0 2px 12px #0001;">
     <h3 style="color: #1565c0;">💬 Chat (Cmd+L)</h3>
     <ul style="font-size: 0.9em;">
       <li>Multi-tab conversations</li>
@@ -115,7 +117,7 @@ class: center, middle
     </ul>
   </div>
 
-  <div style="background: #f6fff6; border-radius: 15px; padding: 25px; box-shadow: 0 2px 12px #0001;">
+  <div style="background: #f6fff6; border-radius: 15px; padding: 10px; box-shadow: 0 2px 12px #0001;">
     <h3 style="color: #2e7d32;">⌨️ Tab Autocomplete</h3>
     <ul style="font-size: 0.9em;">
       <li>Multi-line predictions</li>
@@ -124,7 +126,7 @@ class: center, middle
     </ul>
   </div>
 
-  <div style="background: #fff6fa; border-radius: 15px; padding: 25px; box-shadow: 0 2px 12px #0001;">
+  <div style="background: #fff6fa; border-radius: 15px; padding: 10px; box-shadow: 0 2px 12px #0001;">
     <h3 style="color: #ad1457;">🎯 Agent (Cmd+I)</h3>
     <ul style="font-size: 0.9em;">
       <li>Multi-file editing</li>
@@ -133,7 +135,7 @@ class: center, middle
     </ul>
   </div>
 
-  <div style="background: #f9f6ff; border-radius: 15px; padding: 25px; box-shadow: 0 2px 12px #0001;">
+  <div style="background: #f9f6ff; border-radius: 15px; padding: 10px; box-shadow: 0 2px 12px #0001;">
     <h3 style="color: #6a1b9a;">✏️ Inline Edit (Cmd+K)</h3>
     <ul style="font-size: 0.9em;">
       <li>In-place modifications</li>
@@ -294,7 +296,7 @@ Refactor to:
 
 <div style="margin-top: 0px;">
 
-<div style="background: #f0f8ff; padding: 10px; border-radius: 15px; margin-bottom: 5px;">
+<div style="background: #f0f8ff; padding: 5px; border-radius: 15px; margin-bottom: 5px;">
   <h3>Four Application Modes</h3>
   <ol>
     <li><strong>Always Apply</strong> - Every session automatically</li>
@@ -566,16 +568,13 @@ class: center, middle
 
 --
 
-## The Context File Approach
+### The Context File Approach
 
 - Create <code>docs/context.md</code> with your vision
 
---
-
 - Reference it inside prompts: <code>'Generate the project structure for @docs/context.md '</code>
 
-
-<p style="font-size: 14px; margin-top: 20px;">
+<p style="font-size: 14px; margin-top: 0px;">
   <sup>[1]</sup><a href="https://www.youtube.com/watch?v=WZ8g6deOyAk">Building Apps with AI - Complete Workflow</a>
 </p>
 
@@ -1539,36 +1538,18 @@ class: center, middle
 
 # Connect With Me
 
-## 📚 [Course materials](https://github.com/EnkrateiaLucca/vibe-coding-problem-solvers)
+## 📚 [Course materials](https://github.com/EnkrateiaLucca/cursor-course.git)
 ## 🔗 [LinkedIn](https://www.linkedin.com/in/lucas-soares-969044167/)
 ## 🐦 [Twitter/X - @LucasEnkrateia](https://x.com/LucasEnkrateia)
 ## 📺 [YouTube - @automatalearninglab](https://www.youtube.com/@automatalearninglab)
+## 📖 [Blog](https://enkrateialucca.github.io/lucas-landing-page/blog/)
 ## 📧 Email: lucasenkrateia@gmail.com
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
     <script>
-      // Initialize Mermaid
-      mermaid.initialize({ startOnLoad: false });
-
-      // Create slideshow
-      var slideshow = remark.create({
-        highlightStyle: 'github',
-        highlightLines: true,
-        countIncrementalSlides: false,
-        ratio: '16:9'
-      });
-
-      // Render Mermaid diagrams
-      slideshow.on('afterShowSlide', function (slide) {
-        const mermaidDivs = document.querySelectorAll('.remark-visible .mermaid');
-        mermaidDivs.forEach(div => {
-          if (!div.hasAttribute('data-processed')) {
-            mermaid.init(undefined, div);
-          }
-        });
-      });
+      var slideshow = remark.create();
     </script>
   </body>
 </html>

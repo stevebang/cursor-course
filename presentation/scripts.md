@@ -669,7 +669,7 @@ Walk through the DeepWork AI example:
 
 ### Demo 1: Setting Up Cursor Configuration
 - Create `.cursor/rules` directory
-- Add react.md, typescript.md, styling.md rules
+- Add react.mdc, typescript.mdc, styling.mdc rules
 - Configure application modes (Intelligent, Specific Files)
 - Test with a prompt: "Create a Button component following our rules"
 
